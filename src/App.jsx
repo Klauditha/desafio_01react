@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Card from "./components/Card";
+import MyCard from "./components/MyCard";
 import Header from "./components/Header";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,7 +8,7 @@ import Col from "react-bootstrap/Col";
 import { Footer } from "./components/Footer";
 import ImgHusky from "./assets/husky.jpg";
 import ImgBobtail from "./assets/Bobtail.png";
-import ImgSharpei from "./assets/sharPei.png";
+import ImgSharpei from "./assets/SharPei.png";
 import ImgBeagle from "./assets/Beagle.png";
 
 function App() {
@@ -18,38 +18,38 @@ function App() {
       <Container fluid>
         <Row>
           <Col>
-            <Card
+            <MyCard
               nombre="Bartolo"
-              direccionimagen={ImgHusky}
+              direccionImagen={ImgHusky}
               texto="Lleno de energía y listo para jugar. ¡Dale a Bartolo el hogra amoroso que se merece."
-              colorfondo="success"
+              colorFondo="success"
               tagTexto="Husky"
             />
           </Col>
           <Col>
-            <Card
+            <MyCard
               nombre="Messi"
-              direccionimagen={ImgBobtail}
+              direccionImagen={ImgBobtail}
               texto="Es juguetón, amigable y se lleva bien con niños y otros animales. ¡Haz de Messi parte de tu familia hoy mismo!"
-              colorfondo="primary"
+              colorFondo="primary"
               tagTexto="Bobtail"
             />
           </Col>
           <Col>
-            <Card
+            <MyCard
               nombre="Gohan"
-              direccionimagen={ImgSharpei}
+              direccionImagen={ImgSharpei}
               texto="Un perro de tamaño mediano con un corazón gigante. ¡Hazte amigo de Gohan y experimenta un amor incondicional!"
-              colorfondo="danger"
+              colorFondo="danger"
               tagTexto="Shar Pei"
             />
           </Col>
           <Col>
-            <Card
+            <MyCard
               nombre="Princesa"
-              direccionimagen={ImgBeagle}
+              direccionImagen={ImgBeagle}
               texto="Es una compañera leal y cariñosa que adora los mimos y los abrazos. ¡Ayuda a Princesa a encontrar su final feliz!"
-              colorfondo="warning"
+              colorFondo="warning"
               tagTexto="Beagle"
             />
           </Col>
